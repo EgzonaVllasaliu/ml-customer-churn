@@ -1,3 +1,5 @@
+[object Object]
+
 # Telco Customer Churn Prediction
 
 This project aims to analyze the Telco Customer Churn dataset to understand customer churn patterns, identify important features, and predict customer churn using machine learning algorithms. The dataset contains customer demographics, usage patterns, and transaction history.
@@ -74,6 +76,30 @@ Neural Networks: With proper feature scaling and architecture, neural networks c
 ### Prerequisites
 
 Install python 3.x, Jupyter notebook
+
+# This project aimed to analyze the factors affecting customer churn in a telecommunications company and to build a machine learning model to predict customer churn
+
+The data was preprocessed, and the relevant features were identified. The following steps were taken during the analysis:
+
+1. Visualized the correlation matrix to identify the relationships between the features.
+2. Analyzed the distribution of numerical features and visualized their impact on churn.
+3. Analyzed the distribution of categorical features and visualized their impact on churn.
+4. Split the data into training and test sets, and applied SMOTE to balance the classes in the training set.
+5. Trained a Random Forest Classifier using cross-validation and hyperparameter tuning.
+6. Identified the important features using the feature importances of the best model.
+7. Evaluated the model's performance using accuracy, precision, recall, F1 score, and AUC-ROC score.
+8. Analyzed feature importances using permutation importance.
+
+## Findings
+
+* The correlation matrix showed some relationships between the features, such as tenure and TotalCharges, as well as MonthlyCharges and TotalCharges.
+* The distribution of numerical features (tenure, MonthlyCharges, and TotalCharges) showed different patterns, with some skewed distributions.
+* The distribution of categorical features showed varying relationships with churn, with some features like Contract and InternetService having a strong association with churn.
+* The best Random Forest Classifier had an accuracy of 79.3%, precision of 64.4%, recall of 52.6%, F1 score of 57.8%, and an AUC-ROC score of 84.1%.
+* The top three features identified by the built-in feature importances method were tenure, MonthlyCharges, and TotalCharges.
+* The permutation importance method showed that tenure, Contract, and InternetService were the most important features, with TotalCharges having a relatively low importance.
+
+The analysis revealed that features like tenure, Contract, and InternetService are the most important factors affecting customer churn. The model's performance could be improved by considering adding more relevant features to the dataset. The insights gained from this analysis can be used by the telecommunications company to improve their customer retention strategies and better understand the factors affecting customer churn.
 
 ## Acknowledgements
 
